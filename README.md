@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+## 1. npx create-react-app shop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 2. react bootstrap 설치
 
-## Available Scripts
+npm install react-bootstrap bootstrap
+이후 tailwindcss 설치하면서 bootstrap 삭제함
 
-In the project directory, you can run:
+## 3. react-ruter-dom 설치
 
-### `npm start`
+npm install react-router-dom@6
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 4. Routes Router Route , Link ,Nested Routes 개념 사용
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+용도는 페이지 이동을 위한 라우터 컴포넌트 입니다.
 
-### `npm test`
+Routes : 라우터를 설정하는 컴포넌트
+Router : 라우터를 설정하는 컴포넌트
+Route : 라우터 경로를 설정하는 컴포넌트
+Link : 라우터 경로를 설정하는 컴포넌트
+Nested Routes : 중첩된 라우터 경로를 설정하는 컴포넌트
+Nested Routes는 Route 컴포넌트 안에 Route 컴포넌트를 중첩하여 사용하는 것을 의미합니다. 서브경로
+사용할때는 <Outlet /> 컴포넌트를 사용하여 중첩된 라우터를 렌더링합니다.
+Route 에 '\*' 를 사용하면 404 페이지를 설정할 수 있습니다. 예: <Route path="\*" element={<div>잘못된 페이지입니다.</div>} />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 5. npm install styled-components
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+용도 : 컴포넌트 스타일링을 위한 라이브러리 입니다.
+직접 만든 컴포넌트에 스타일을 적용할 때 사용합니다.
+예시 : const Button = styled.button`background: black; color: white;`;
